@@ -1,0 +1,6 @@
+#!/usr/bin/expect -f
+spawn ccloud login
+expect "Email: "
+send "$env(CLOUD_USERNAME)\r"
+expect "Password: "
+send "$env(CLOUD_PASSWORD)\r"
